@@ -1,0 +1,45 @@
+log4j:
+	Application debugging 
+	Exception, ERRORs 
+	
+Java:
+	System.out.println	- Console 
+	Clears
+	
+
+Framework
+	log4j - logging framework
+	
+	some.java
+		classpath: jar
+		maven -> pom.xl -> log4j dependency
+	
+	Logger	log = new Logger();	- own object
+	Logger log = LogFactory.getLogger();	// log4j way of getting
+		
+		log
+			INFO	- Default enabled
+		
+	LEVELs of logging
+		
+		FATAL -> ERROR -> WARN	-> INFO	->	DEBUG -> TRACE
+		
+		log.debug("debug enabled");
+		log.info("info mode");
+		
+		
+	APPENDER:
+	
+		ConsoleAppender	
+		FileAppender
+		RollingFileAppender
+		
+	${sys:file.separator}
+		windows : \
+		linux: /
+		
+	
+	
+
+Third Party implementors
+	sl4j , logback
