@@ -1,0 +1,18 @@
+REST API implementation:-
+1. Maven web project creation
+2. Adding spring related dependencies
+	spring-core
+	spring-context
+	spring-webmvc
+3. web.xml	- 
+	Adding org.springframework.web.servlet.DispatcherServlet
+	Adding servlet-mapping
+4. Creating class WelcomeController
+	Adding @RestController
+5. Adding init-param to DispatcherServlet
+6. Adding web-context.xml to define spring configuration
+7. Generate the war file from pom
+8. downloading jetty server
+9. extract the server
+10. copy the generated war file to jetty-distribution/webapps
+
